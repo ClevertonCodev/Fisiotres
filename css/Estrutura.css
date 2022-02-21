@@ -275,22 +275,36 @@ ul{
 .footer-col .social-links {
   margin-top: 10px;
   margin-bottom: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 5px;
+  margin-left: 60px
  
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 768px){
   .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+    width: 51%;
+    margin-bottom: 30px;}
+    .footer-col .social-links {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      margin-right: 5px;
+      margin-left: 47px;}
 }
-}
+
+
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
+}
+
+@media(max-width: 375px){
+  .footer-col .social-links {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 17px;}
 }
 
 .copyright { /* corporação 2022*/
