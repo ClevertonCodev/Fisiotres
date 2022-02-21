@@ -1,46 +1,17 @@
-class MobileNavbar {
-  constructor(celularMenu, navList, navLinks) {
-    this.celularMenu = document.querySelector(celularMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
+const btnMobile = document.getElementById('btn-mobile');
 
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
-  }
-
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.celularMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
-  }
-
-  addClickEvent() {
-    this.celularMenu.addEventListener("click", this.handleClick);
-  }
-
-  init() {
-    if (this.celularMenu) {
-      this.addClickEvent();
-    }
-    return this;
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
 }
 
-const mobileNavbar = new MobileNavbar(
-  ".celular-menu",
-  ".nav-list",
-  ".nav-list li",
-);
-mobileNavbar.init()
-
-
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
