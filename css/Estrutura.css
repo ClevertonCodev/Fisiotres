@@ -258,6 +258,7 @@ ul{
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+  font-size: 28px;
 }
 .footer-col .social-links a:hover{
 	color: var(--acabamento);
