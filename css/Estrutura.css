@@ -65,6 +65,7 @@ a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
+  transition: all 0.3s ease;
 }
 
 a:hover {
@@ -327,7 +328,7 @@ ul{
 	letter-spacing: 2px;
 	border-top-width: 2px; }
 
-  .consulta {
+.consulta {
     text-align:center;	
     background: var(--detalhes);
     border-style: solid;
@@ -335,14 +336,19 @@ ul{
     text-transform: uppercase;
     border-radius: 10px;
     width: 208px;
+    height: auto;
     margin: auto;
     margin-top: 10px;
-    }
-  .consulta a > p {
-    color:  #bbbbbb;;
-  }
+    position:relative;
+    overflow:hidden;}
+   
+.consulta a {
+    color:  white;
+    ;
+    font-weight: bold;
+}
 
-.consulta a:hover{
+.consulta a:hover {
     background: var(--cor0);
     color: black;
 }

@@ -39,6 +39,7 @@ a{color:inherit;text-decoration:none}
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
+	margin: 3px;
 	background:#151a1d;
 }
 .login-html .sign-in-htm,
@@ -73,7 +74,15 @@ a{color:inherit;text-decoration:none}
 
 }
 label {
-    color: #8D9CA6;
+    color: white;
+}
+.login-html {
+	background: rgb(255 255 255 / 2%);
+	box-shadow:rgb(255 255 255 / 2%);
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .login-html .sign-in:checked + .tab,
