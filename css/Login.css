@@ -88,8 +88,9 @@ label {
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
 	color:#fff;
-	border-color:#04D939;
+	border-color:#04D939;	
 }
+
 .login-form{
 	min-height:345px;
 	position:relative;
@@ -106,6 +107,10 @@ label {
 	color:#fff;
 	display:block;
 }
+.login-form .group .button:hover{
+ background: #025939;
+}
+
 .login-form .group .input,
 .login-form .group .button{
 	border:none;
@@ -179,3 +184,4 @@ label {
 .foot-lnk{
 	text-align:center;
 }
+
