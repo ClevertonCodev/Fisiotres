@@ -121,14 +121,6 @@ main > img {
   margin-right: auto;
   margin-left: auto;
 }
-.vidro {
-  background: rgb(255 255 255 / 2%);
-	box-shadow:rgb(255 255 255 / 2%);
-	backdrop-filter: blur( 4px );
-	-webkit-backdrop-filter: blur( 4px );
-	border-radius: 10px;
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
 
 @media (min-width: 576px) {
   .container {
@@ -4558,9 +4550,41 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
 }
+
+.vidro {
+  background: rgba(0, 0, 0, 0.486);
+	box-shadow:rgb(255 255 255 / 2%);
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 3;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frase-slide {
+  text-align: center;
+  color: white;
+  text-indent: 0px;
+  
+}
+
+@media (max-width: 430px) {
+.vidro{
+  width: fit-content;
+}
+#h2{
+  font-size: 20px;
+}
+  
+}
+
+
 
 @-webkit-keyframes spinner-border {
   to {
