@@ -18,9 +18,23 @@ padding: 0;
 
 body{
     overflow-x: hidden;
-    background-color: white;
+    background-color:white;
     line-height: 1.5;
-    
+
+}
+
+.pg1{
+  overflow-x: hidden;
+    background-color:#151a1d;
+    line-height: 1.5;
+}
+
+.fundo {
+  background-image: url("images/fundo.png");
+  background: 50% 50%;
+  overflow: visible;
+ 
+  
 }
 
 main p {/* texto e links */
@@ -32,13 +46,24 @@ main p {/* texto e links */
   line-height: 1.5em;
   
   }
+  .mpg1 {
+    margin: auto;
+      width: 90%;
+      margin-bottom: 1px;
+      margin: auto;
+      background-color: #151a1d;
+      
+  }
   main{
       margin: auto;
       width: 90%;
       background-color: white;
       margin-bottom: 1px;
       margin: auto;
+   
   }
+
+  
   
   main h1 {
       text-align: center;
@@ -65,7 +90,7 @@ a {
   color: white;
   text-decoration: none;
   font-family: sans-serif;
-  transition: all 0.3s ease;
+  
 }
 
 a:hover {
@@ -115,11 +140,12 @@ a:hover {
     top: 9vh;
     right: 0px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--detalhes) );
-    transition: 0.4s;
     z-index: 1000;
     height: 1010%;
     visibility: hidden;
-    overflow-y: hidden;}
+    overflow-y: hidden;
+    transition: all 0.8s ease
+  }
 
     main{
       padding: 18px;
@@ -144,11 +170,14 @@ a:hover {
     height: calc(100vh - 50px);
     visibility: visible;
     overflow-y: auto;
+    
+    
   }
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     /*border-bottom: 2px solid white;*/
+   
   }
   #btn-mobile {
     display: flex;
@@ -158,6 +187,7 @@ a:hover {
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+
   }
   #hamburger {
     border-top: 2px solid;

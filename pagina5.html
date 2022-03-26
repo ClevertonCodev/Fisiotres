@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/Estrutura.css">
   <link rel="shortcut icon" href="img/fisiotres.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/Login.css">
 </head>
-<body class="login">
+<body>
 	<header id="header">
 	  <a id="logo" href ="inicial.html" > <img src="img/pequeno.png" alt="FISIOTRÊS"> </a >
 	  <nav id="nav">
@@ -22,13 +24,45 @@
 		  <li><a href="pagina2.html">Nosso Trabalho</a></li>
 		  <li><a href="pagina3.html">Equipe</a></li>
 		  <li><a href="pagina4.html">Fale conosco</a></li>
-          <li><a href="pagina5.html"> Fazer Login</a></li>
+		  <li><a href="pagina5.html"> Fazer Login</a></li>
 		</ul>
 	  </nav>
 	</header>
 	<script src="javaScript/mobile-fisiotres.js"></script>
-
+	<script src="javaScript/jquery-3.4.1.min.js"></script>
+    <script src="javaScript/bootstrap-4.4.1.js"></script>
+	<script type="text/javascript">
+		$(window).on('load',function(){
+		$('#meuModal').modal('show'); });
+	</script>
+    
 	<main >
+        <!-- Modal-->
+		 <div class="modal fade" id="meuModal" tabindex="-1" role="dialog" style="text-align: center;">
+
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+				<div class="modal-header">
+					<h2 class="modal-title col-md-11">Título</h2>
+				<button type="button" class="close col-md-1" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			   </div>
+			   <div class="modal-body">
+				   <h3>Corpo da mensagem da modal bootstrap</h3><br>
+				   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iste inventore beatae animi explicabo, ipsam quia nisi, qui, voluptas aspernatur eum. Obcaecati aspernatur labore ducimus quasi tenetur sequi repellendus eaque.</p>
+			   </div>
+			   <div class="modal-footer">
+				   <button id="bclose" type="button" class="btn btn-danger col-md-4" data-dismiss="modal">
+						   Fechar
+					  </button>
+			  </div>
+			  </div>
+		  </div>
+		</div>
+		<!-- fim modal-->
+        
         <div class="login-wrap">
             <div class="login-html">
                 <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Entre</label>
@@ -38,7 +72,7 @@
                     <div class="sign-in-htm">
                         <div class="group">
                             <label for="user" class="label">Crefito</label>
-                            <input id="user" type="text" placeholder="Digite Seu Crefito......."class="input"> 
+                            <input id="user" type="crefito" placeholder="Digite Seu Crefito......."class="input">  
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Senha</label>
@@ -49,7 +83,9 @@
                             <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
                         </div>
                         <div id="conform" class="group">
-                            <input id="log" type="submit" class="button" value="ENTRAR">
+                            <!--<input id="log" type="submit" class="button" value="ENTRAR"> -->
+                            <button id="log" type="submit" class="button" value="ENTRAR">ENTRAR</button>
+                        
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
@@ -58,23 +94,24 @@
                     </div>
                     <div class="sign-up-htm">
                         <div class="group">
-                            <label for="user" class="label">Crefito</label>
-                            <input id="user" type="text" class="input" placeholder="Digite Seu Crefito....... ">
+                            <label id="crefito" for="user" class="label">Crefito</label>
+                            <input id="uscrefito"  type="text" class="input" placeholder="Digite Seu Crefito....... ">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Senha</label>
-                            <input id="pass" type="password" class="input" placeholder="Digite Sua Senha......." data-type="password">
+                            <label id="senha" for="pass" class="label">Senha</label>
+                            <input id="password" id="pass" type="password" class="input" placeholder="Digite Sua Senha......." data-type="password">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">REPITA A SENHA</label>
-                            <input id="pass" type="password" class="input" placeholder="Digite a Senha Novamente......." data-type="password">
+                            <label id="confirsenha" for="pass" class="label">REPITA A SENHA</label>
+                            <input id="repassword" id="pass" type="password" class="input" placeholder="Digite a Senha Novamente......." data-type="password">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Email</label>
-                            <input id="pass" type="text" class="input" placeholder="Digite Seu Email.......">
+                            <label id="eamil" for="pass" class="label">Email</label>
+                            <input id="demail" id="pass" type="text" class="input" placeholder="Digite Seu Email.......">
                         </div>
                         <div id="conform"class="group">
-                            <input type="submit" class="button" value="CADASTRAR">
+                            
+                            <button  onclick= "cadastro()" type="submit" class="button" value="CADASTRAR" >CADASTRAR</button>
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
