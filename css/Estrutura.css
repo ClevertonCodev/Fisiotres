@@ -18,24 +18,18 @@ padding: 0;
 
 body{
     overflow-x: hidden;
-    background-color:white;
-    line-height: 1.5;
-
-}
-
-.pg1{
-  overflow-x: hidden;
-    background-color:#151a1d;
+    
     line-height: 1.5;
 }
-
-.fundo {
-  background-image: url("images/fundo.png");
-  background: 50% 50%;
-  overflow: visible;
- 
-  
+.pg1 {
+  background-image: url('../img/fundob.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
 }
+
 
 main p {/* texto e links */
   font-size: 16px;
@@ -46,18 +40,11 @@ main p {/* texto e links */
   line-height: 1.5em;
   
   }
-  .mpg1 {
-    margin: auto;
-      width: 90%;
-      margin-bottom: 1px;
-      margin: auto;
-      background-color: #151a1d;
-      
-  }
+  
+  
   main{
       margin: auto;
       width: 90%;
-      background-color: white;
       margin-bottom: 1px;
       margin: auto;
    
@@ -67,7 +54,7 @@ main p {/* texto e links */
   
   main h1 {
       text-align: center;
-      background: white;
+      
   }
   
   main p {
@@ -386,3 +373,36 @@ ul{
     background: var(--cor0);
     color: black;
 }
+
+.ffisio {
+  clip-path: circle(47% at 53% 48%);
+  background: #151a1d;
+  justify-content: space-around;
+  overflow: hidden;
+  margin-left:-2% ;
+
+  
+ 
+}
+
+.ftres {
+ 
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+.pft {
+  text-align: start;
+  line-height: 2em;
+  
+}
+
+#vtres {
+  background: rgba(25, 252, 4, 0.349);
+	box-shadow:rgb(255 255 255 / 2%);
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255,); }
+

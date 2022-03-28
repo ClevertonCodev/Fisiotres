@@ -4,15 +4,6 @@ margin: 0;
 padding: 0;
 }
 
-:root {
-    --cor0:#025939;
-    --cor1:#027333;
-    --cor2: #03A63C;
-    --detalhes: #04D939;
-    --acabamento: #151a1d;
-    --acabamento1: #8D9CA6;
-    --acabamento2: white;
-     }
      .modal-open {
         overflow: hidden;
       }
@@ -153,6 +144,9 @@ padding: 0;
       .modal-title {
         margin-bottom: 0;
         line-height: 1.5;
+        color: red;
+        text-align: center;
+        margin-left: 4%;
       }
       
       .modal-body {
@@ -237,7 +231,16 @@ padding: 0;
 
     #bclose {
         background: #03A63C;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-right: 29%;
+        height: -48%;
+        width: 195px;
+        border-radius: 49%;;
     }
     #bclose:hover{
         background: #025939;
+        color: white;
     }
