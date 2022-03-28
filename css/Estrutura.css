@@ -400,8 +400,8 @@ ul{
 }
 
 #vtres {
-  background: rgba(25, 252, 4, 0.349);
-	box-shadow:rgb(255 255 255 / 2%);
+  background: rgba(23, 253, 2, 0.233);
+	box-shadow:rgba(2, 2, 2, 0.02);
 	backdrop-filter: blur( 4px );
 	-webkit-backdrop-filter: blur( 4px );
 	border-radius: 10px;
