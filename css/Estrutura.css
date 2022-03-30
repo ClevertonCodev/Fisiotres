@@ -86,6 +86,7 @@ a:hover {
 
 #logo {
   margin: auto;
+ 
 }
 
 #header {
@@ -111,7 +112,9 @@ a:hover {
   display: block;
   padding: 0.5rem;
   margin-right: 32px;
+  
 }
+
 
 #btn-mobile {
   display: none;
@@ -163,9 +166,18 @@ a:hover {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
+  
+    
     /*border-bottom: 2px solid white;*/
    
   }
+  #menu a:hover {
+    padding-left: 10px;
+    transition: all 0.3s ease;
+    background: scroll;
+     }
+
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -262,8 +274,9 @@ ul{
   text-align: center;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: white;
 	padding-left: 8px;
+  background: scroll;
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -366,13 +379,13 @@ ul{
     font-weight: bold;
 }
 
-.consulta a:hover {
+.consulta > a:hover {
     background: var(--cor0);
-    color: black;
+    
+    
 }
-.consulta:hover{
-    background: var(--cor0);
-    color: black;
+.consulta:hover {
+  background: var(--cor0);
 }
 
 .ffisio {
