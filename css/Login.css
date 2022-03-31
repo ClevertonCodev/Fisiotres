@@ -33,6 +33,7 @@ a{color:inherit;text-decoration:none}
 	position:relative;
 	background:url() no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	
 }
 .login-html{
 	width:100%;
@@ -89,8 +90,19 @@ label {
 .login-html .sign-up:checked + .tab{
 	color:#fff;
 	border-color:#04D939;	
-}
 
+}
+@media (max-width: 1000px){ 
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.foot-lnk{
+	overflow: hidden;
+}
+}
 .login-form{
 	min-height:345px;
 	position:relative;
@@ -182,5 +194,4 @@ label {
 	background:rgba(255,255,255,.2);
 }
 .foot-lnk{
-	text-align:center;
-}
+	text-align:center; }
