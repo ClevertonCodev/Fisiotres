@@ -1,4 +1,4 @@
-* Função Validar */
+
 function validar() {
   // pegando o valor do nome pelos names
   var nome = document.getElementById("nome");

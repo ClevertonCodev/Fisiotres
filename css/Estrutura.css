@@ -28,6 +28,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   background-color: white;
+  
 }
 
 
@@ -342,9 +343,8 @@ ul{
 @media(max-width:364px){
   .social-links {
     columns: 3;
-    display: flow-root;
-    flex-direction: column;
-    text-align: center;
+    padding-left: 18%;
+    padding-right: 15%;
     
   }
 }
@@ -396,6 +396,7 @@ ul{
   justify-content: space-around;
   overflow: hidden;
   margin-left:-2% ;
+  
 
   
  
@@ -405,20 +406,33 @@ ul{
  
   display: flex;
   justify-content: space-around;
-  
-  
-}
-.pft {
-  text-align: start;
-  line-height: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+
+
   
 }
 
 #vtres {
-  background: rgba(23, 253, 2, 0.233);
-	box-shadow:rgba(2, 2, 2, 0.02);
+  background: rgba(23, 253, 2, 0.13);
+	box-shadow:rgba(2, 2, 2, 0.445);
 	backdrop-filter: blur( 4px );
 	-webkit-backdrop-filter: blur( 4px );
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255,); }
+
+.fotofisio {
+  width: 80%;
+  height: 20%;
+  line-height: 2em;
+
+ 
+}
+.fotofisio1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+ 
+}
 
