@@ -126,9 +126,8 @@ a:hover {
     position: absolute;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
-    top: 9vh;
     right: 0px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--detalhes) );
     z-index: 1000;
@@ -158,7 +157,7 @@ a:hover {
 	width: 100%;}
 
   #nav.active #menu {
-    height: calc(100vh - 50px);
+    height: 34rem;
     visibility: visible;
     overflow-y: auto;
     
