@@ -157,7 +157,7 @@ a:hover {
 	width: 100%;}
 
   #nav.active #menu {
-    height: 34rem;
+    height: calc(101vh - 50px);
     visibility: visible;
     overflow-y: auto;
     
