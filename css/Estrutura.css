@@ -28,12 +28,11 @@ body{
   background-size: cover;
   background-attachment: fixed;
   background-color: white;
-
-  @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
   
 }
+
+@supports (-webkit-overflow-scrolling: touch) { 	
+  body .pg1 * { 		background-attachment: scroll; 	} }
 
 
 
