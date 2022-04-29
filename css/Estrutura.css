@@ -23,18 +23,21 @@ body{
 }
 .pg1 {
   background-image: url('../img/fundob.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   background-color: white;
+  background-attachment: fixed;
+  
   
 }
 
-@supports (-webkit-overflow-scrolling: touch) { 	
-  body .pg1 * { 		background-attachment: scroll; 	} }
 
+ @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 700px) {
+  .pg1 {background-attachment: none;
 
+   }
+  }
 
 
 main p {/* texto e links */
