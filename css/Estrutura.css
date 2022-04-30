@@ -26,7 +26,7 @@ body{
   background-position: center center;
   background-size: cover;
   background-color: white;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   
 }
 
@@ -122,10 +122,8 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
-  #disp .pg1{
-    display: none;
-  }
-  
+ 
+ 
 
   #menu {
     position: absolute;
@@ -222,6 +220,12 @@ a:hover {
     top: -7px;
   }
 }
+
+@media not all and (max-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (display:flow-root) 
+  { .pg1 { 
+    background-image:url(); 
+  } 
+} }
 
 
 /*final*/
