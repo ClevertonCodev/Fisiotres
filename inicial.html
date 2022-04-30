@@ -30,44 +30,20 @@
 	<script src="javaScript/mobile-fisiotres.js"></script>
 	<script src="javaScript/jquery-3.4.1.min.js"></script>
     <script src="javaScript/bootstrap-4.4.1.js"></script>
-	<script>
-	function isIOS()
-{    
-    var ua = navigator.userAgent.toLowerCase();
-
-    //Lista de dispositivos que acessar
-    var iosArray = ['iphone', 'ipod'];
-
-    var isApple = false;
-
-    //valida seu array
-    iosArray.forEach(function(item){
-
-        if (ua.indexOf(iosArray[item]) != -1)
-        {
-            isApple = true;
-        }
-
-    });
-
-    return isApple;
-}
-
-if(isIOS())
-{
-    $('.pg1').css({
-        'background-image': 'none'
-	 
-
-    });
-}
-
-	</script>
-	<!-- slides <script type="text/javascript">
-		document.addEventListener("scroll", function(){
+	<script funcio type="text/javascript">
+        if (iosVersion >= 7){document.addEventListener("scroll", function(){
    document.querySelector("body").style.backgroundPosition = '0 '+window.pageYOffset+'px';
 });
-	</script>-->
+}
+if (iosVersion >= 7) {
+    $(document).scroll(function() {
+        $('.pg1').css('background-repeat', 'repeat-x');
+    });
+}
+    </script> 
+	 
+</head>
+
 
 	<main class="mpg1" >
 		<!-- slides-->

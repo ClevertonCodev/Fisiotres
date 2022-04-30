@@ -18,26 +18,18 @@ padding: 0;
 
 body{
     overflow-x: hidden;
-    
     line-height: 1.5;
 }
 .pg1 {
   background-image: url('../img/fundob.jpg');
-  background-repeat: repeat-x;
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   background-color: white;
-  background-attachment: fixed;
-  
+  background-repeat: repeat-x;
   
 }
 
-
- @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 700px) {
-  .pg1 {background-attachment: none;
-
-   }
-  }
 
 
 main p {/* texto e links */
@@ -130,6 +122,11 @@ a:hover {
 }
 
 @media (max-width: 1000px) {
+  #disp .pg1{
+    display: none;
+  }
+  
+
   #menu {
     position: absolute;
     flex-direction: column;
