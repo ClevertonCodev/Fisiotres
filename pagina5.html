@@ -31,6 +31,7 @@
 	<script src="javaScript/mobile-fisiotres.js"></script>
 	<script src="javaScript/jquery-3.4.1.min.js"></script>
     <script src="javaScript/bootstrap-4.4.1.js"></script>
+	<script src="javaScript/login.entrar.js"></script>
 	<script type="text/javascript">
 		$(window).on('load',function(){
 		$('#meuModal').modal('show'); });
@@ -69,7 +70,7 @@
                 <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">cadastre-se</label>
                 
                 <div class="login-form">
-                    <div class="sign-in-htm">
+                    <div class="sign-in-htm"  >
                         <div class="group">
                             <label for="user" class="label">Crefito</label>
                             <input id="user" type="crefito" placeholder="Digite Seu Crefito......."class="input">  
@@ -82,8 +83,7 @@
                             <input id="check" type="checkbox" class="check" checked>
                             <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
                         </div>
-                        <div id="conform" class="group">
-                            <!--<input id="log" type="submit" class="button" value="ENTRAR"> -->
+                        <div id="conform" class="group" onclick="login()">
                             <button id="log" type="submit" class="button" value="ENTRAR">ENTRAR</button>
                         
                         </div>
