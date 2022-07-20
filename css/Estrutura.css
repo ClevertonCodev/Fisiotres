@@ -19,6 +19,7 @@ padding: 0;
 body{
     overflow-x: hidden;
     line-height: 1.5;
+    
 }
 .pg1 {
   background-image: url('../img/fundob.jpg');
@@ -47,7 +48,6 @@ main p {/* texto e links */
       margin: auto;
       width: 95%;
       margin-bottom: 1px;
-      margin: auto;
    
   }
 
@@ -98,6 +98,7 @@ a:hover {
   justify-content: space-between;
   background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--detalhes) );
   
+  
 }
 
 #menu {
@@ -121,9 +122,11 @@ a:hover {
   display: none;
 }
 
+.espaço {
+  display: none; 
+}
+
 @media (max-width: 1000px) {
- 
- 
 
   #menu {
     position: absolute;
@@ -219,6 +222,9 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+  .espaço {
+    display: block; 
+  }
 }
 
 @media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (display:flow-root) 
@@ -230,8 +236,10 @@ a:hover {
 
 
 /*final*/
+
 .container{
-	max-width: 1170px;
+  padding-top: 4.2%;
+	max-width: 100%;
 	margin:auto;
 }
 .row{

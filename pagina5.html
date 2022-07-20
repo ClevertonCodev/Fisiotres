@@ -65,57 +65,72 @@
 		<!-- fim modal-->
         
         <div class="login-wrap">
+			
             <div class="login-html">
                 <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Entre</label>
                 <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">cadastre-se</label>
                 
                 <div class="login-form">
+				  <form action="entrar.php" method="post">
                     <div class="sign-in-htm"  >
                         <div class="group">
                             <label for="user" class="label">Crefito</label>
-                            <input id="user" type="crefito" placeholder="Digite Seu Crefito......."class="input">  
+                            <input id="user" type="text" placeholder="Digite Seu Crefito......."class="input" name="crefito">  
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Senha</label>
-                            <input id="pass" type="password" class="input"  placeholder="Digite Sua Senha......." data-type="password">
+                            <input id="pass" type="password" class="input"  placeholder="Digite Sua Senha......." data-type="password" name="senha">
                         </div>
                         <div class="group">
                             <input id="check" type="checkbox" class="check" checked>
                             <label for="check"><span class="icon"></span> Mantenha-me conectado</label>
                         </div>
-                        <div id="conform" class="group" onclick="login()">
+                        <div id="conform" class="group">
+							<input id="log" type="submit" class="button" value="ENTRAR" name = 'entrar'>
+							<!--
                             <button id="log" type="submit" class="button" value="ENTRAR">ENTRAR</button>
+							-->
                         
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
                             <a href="#forgot">Esqueceu a Senha?</a>
                         </div>
+				   </form>	
                     </div>
                     <div class="sign-up-htm">
                         <div class="group">
+					<form action="cadastrar.php" method="post">
                             <label id="crefito" for="user" class="label">Crefito</label>
-                            <input id="uscrefito"  type="text" class="input" placeholder="Digite Seu Crefito....... ">
+
+                            <input id="uscrefito"  type="text" class="input" placeholder="Digite Seu Crefito....... " required  name="crefito">
+
                         </div>
                         <div class="group">
                             <label id="senha" for="pass" class="label">Senha</label>
-                            <input id="password" id="pass" type="password" class="input" placeholder="Digite Sua Senha......." data-type="password">
+
+                            <input id="password" id="pass" type="password" class="input" placeholder="Digite Sua Senha......." data-type="password" name="senha" required >
+
                         </div>
                         <div class="group">
-                            <label id="confirsenha" for="pass" class="label">REPITA A SENHA</label>
-                            <input id="repassword" id="pass" type="password" class="input" placeholder="Digite a Senha Novamente......." data-type="password">
+                            <label id="confirsenha" for="pass" class="label">NOME </label>
+                            <input id="repassword" id="pass" type="text" class="input" placeholder="Digite seu nome......." required  name="nome">
                         </div>
                         <div class="group">
                             <label id="eamil" for="pass" class="label">Email</label>
-                            <input id="demail" id="pass" type="text" class="input" placeholder="Digite Seu Email.......">
+
+                            <input id="demail" id="pass" type="email" class="input" placeholder="Digite Seu Email......." required  name="email" >
+
                         </div>
                         <div id="conform"class="group">
                             
-                            <button  onclick= "cadastro()" type="submit" class="button" value="CADASTRAR" >CADASTRAR</button>
+                            <input type="submit" class="button" value="CADASTRAR" >
                         </div>
+						
                         <div class="hr1"></div>
                         <div class="foot-lnk">
-                            <a href=""><label for="tab-1">Já é Membro?</a></a>
+                            <a href="pagina5.html"><label for="tab-1">Já é Membro?</a></a>
+					</form>			
                         </div>
                     </div>
                 </div>
