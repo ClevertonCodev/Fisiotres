@@ -1,6 +1,8 @@
-<?php 
-	  
-	  ?>
+<?php
+require 'verificar.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,8 +27,16 @@
 		  <li><a href="inicial.html">Início</a></li>
 		  <li><a href="pagina2.html">Nosso Trabalho</a></li>
 		  <li><a href="pagina3.html">Equipe</a></li>
-		  <li><a href="pagina4.html">Apagar usuario</a></li>
-		  <li><a href="inicial.html"> Sair</a></li>
+		  <li><a href="pagina4.html">Usuario: 
+
+
+
+		<?php echo $_SESSION['nome']; ?>
+
+
+
+		  </a></li>
+		  <li><a href="sair.php"> Sair</a></li>
 		</ul>
 	  </nav>
 	</header>
@@ -40,9 +50,14 @@
 	<main >
 		<h1>Sistema home care</h1>
 	</main> 
-	  <?php 
-	 echo 'legal'
-	  ?>
+
+
+
+	
+
+
+
+	
 	 
 <!-- footer-->
   <footer class="footer">
@@ -110,3 +125,4 @@
 
 </body>
 </html>
+ 

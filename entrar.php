@@ -10,13 +10,13 @@ class cadastrados {
         
         if($busca->rowCount()>0){
             $dados = $busca->fetch();
-            
             $_SESSION['nome'] = $dados['nome'];
             return true;
         }else {
             return false;
         }
     }
+    
 }
 
 
