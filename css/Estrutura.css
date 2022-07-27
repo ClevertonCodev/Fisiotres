@@ -136,7 +136,7 @@ a:hover {
     width: 100%;
     right: 0px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--detalhes) );
-    z-index: 1000;
+    z-index: 2;
     height: 1010%;
     visibility: hidden;
     overflow-y: hidden;
@@ -238,7 +238,6 @@ a:hover {
 /*final*/
 
 .container{
-  padding-top: 4.2%;
 	max-width: 100%;
 	margin:auto;
 }
@@ -453,4 +452,6 @@ ul{
   overflow: hidden;
  
 }
+
+
 
